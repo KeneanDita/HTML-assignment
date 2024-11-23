@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to Insert Images in HTML</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        
+        main {
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        code {
+            background-color: #f4f4f4;
+            border: 1px solid #ddd;
+            padding: 5px;
+            display: block;
+            margin: 10px 0;
+            color: #d63384;
+        }
+        pre {
+            background: #272822;
+            color: #f8f8f2;
+            padding: 10px;
+            overflow-x: auto;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        
+    </style>
+</head>
+<body>
+    <main>
+        <h1>How to Insert Images in HTML</h1>
+        <section>
+            <h2>Basic Syntax</h2>
+            <p>To insert an image in HTML, use the <code>&lt;img&gt;</code> tag. This tag is self-closing and requires at least the <code>src</code> attribute to specify the image's location.</p>
+            <pre>&lt;img src="image.jpg" alt="Description of image"&gt;</pre>
+            <p>The <code>alt</code> attribute provides alternative text for the image if it cannot be displayed.</p>
+        </section>
+
+        <section>
+            <h2>Example</h2>
+            <p>Here's an example of embedding an image:</p>
+            <pre>
+&lt;img src="house.jpg" alt="House Image"&gt;
+            </pre>
+            <p>Rendered Output:</p>
+            <img src="house.jpg" alt="House Image">
+        </section>
+
+        <section>
+            <h2>Organizing Your Files</h2>
+            <p>For better organization, store your images in a separate folder, typically named <code>images</code>. Update the <code>src</code> path accordingly.</p>
+            <pre>&lt;img src="images/photo.jpg" alt="A beautiful photo"&gt;</pre>
+        </section>
+
+        <section>
+            <h2>Adding CSS for Styling</h2>
+            <p>You can style images using CSS. For instance:</p>
+            <pre>
+img {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+}
+            </pre>
+            <p>This ensures the image is responsive and styled nicely.</p>
+        </section>
+    </main>
+</body>
+</html>

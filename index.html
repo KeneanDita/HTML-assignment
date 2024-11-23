@@ -4,32 +4,87 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>First class</title>
-        <!-- text-transform: lowercase;--> 
-    <style>
-        body{
-            font-size: 30px;
-          
+ <style>
+    body {
+        font-size: 30px;
+        text-transform: capitalize;
+    }
+    header{
+        width: 100%;
+        height: 100px;
+        border-radius: 0px;
+        background-color: rgb(35, 0, 117);
+        color: white;
+        padding: 2px;
+        text-align: center;
+        border-width: 2px;
+    }
+    
+    nav{
+        width: 15%;
+        height: 700px;
+        float: left;
+        background-color: rgb(249, 249, 249);
+        font-size: smaller;
+    }
+
+    main{
+        width: 85%;
+        height: 700px;
+        float: left;
+        background-color: rgb(170, 170, 170);
+    }
+
+    footer {
+            text-align: center;
+            padding: 10px 20px;
+            background: #333;
+            color: white;
+            margin-top: 20px;
         }
-    </style>
+    a{
+        display: block;
+        padding: 10px;
+        text-decoration: none;
+    }
+    a::hover {
+        text-decoration: underline;
+        color: rgb(225, 113, 65);
+        transition: 1s;
+        cursor: pointer;
+    }
+    #Linn{
+        color: white;
+        flex: auto;
+    }
+ </style>
+   
 </head>
 <body>
-    <p>this is our first class</p>
-    <p>Hello World</p>
-    <p>Water : H<sub>2</sub>O</p>
-    <p>equation : x<sup>3</sup> + x<sup>2</sup> + 4</p>
-    <!-- this is a comment so dont't worry it will not execute-->
-     <p>this is <b>first</b> <i>program</i> and its <em> very</em> <u> imprtant.</u> </p>
+    <header>
+        <p>Web desgin Assignment 1</p>
+    </header>
 
-    <ol style = "list-style: upper-roman;">
-        <li>Chapter 1</li>
-        <li>Chapter 2</li>
-        <li>Chapter 3</li>
-    </ol>
-    <ul style="list-style: square;">
-        <li>Chapter 1</li>
-        <li>Chapter 2</li>
-        <li>Chapter 3</li>
-    </ul>
+    <nav>
+        <div>
+            
+            <a href="Home.html" target="main">Home</a>
+            <a href="About.html" target="main">About us</a>
+            <a href="gallery.html" target="main">Gallery</a>
+            <a href="story.html" target="main">Story</a>
+            <a href="demo.html" target="main">Sign up</a>
+        </div>
+    </nav>
+
+    <main>
+        <iframe src="" name="main" width="100%" height="695" frameborder="2"></iframe>
+    </main>
+
+    <footer>
+        <a href="https://www.google.com" target="_blank" id="Linn">google</a>
+        <a href="https://www.freecodecamp.org/news/tag/web-development/" target="_blank" id="Linn">Learn more about Web</a>
+    </footer>
+
 
 </body>
 </html>

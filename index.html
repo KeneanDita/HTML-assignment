@@ -41,6 +41,7 @@
             background: #333;
             color: white;
             margin-top: 20px;
+            font-size: smaller;
         }
     a{
         display: block;
@@ -48,10 +49,13 @@
         text-decoration: none;
     }
     a::hover {
+        cursor: pointer;
+    }
+    .ahover::hover{
         text-decoration: underline;
         color: rgb(225, 113, 65);
-        transition: 1s;
-        cursor: pointer;
+        transform: rotate(180);
+
     }
     #Linn{
         color: white;
@@ -66,7 +70,7 @@
     </header>
 
     <nav>
-        <div>
+        <div class="ahover">
             
             <a href="Home.html" target="main">Home</a>
             <a href="About.html" target="main">About us</a>
@@ -84,6 +88,7 @@
         <div class="flex">
             <a href="https://www.google.com" target="_blank" id="Linn">google</a>
             <a href="https://www.freecodecamp.org/news/tag/web-development/" target="_blank" id="Linn">Learn more about Web</a>
+            <p>All &#169copyrights Reserved 2024.</p>
         
         </div>
         
